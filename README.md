@@ -3,3 +3,4 @@ Materiales de laboratorio para los cursos de Introducción a las Ciencias de la 
 
 ## Índice
 1. [Resolución de problemas](https://docs.google.com/document/d/1wCi954Bkd3gNYsjPGxeDXHhyYCf7XMmwz8f8JMkz2IA/edit?usp=sharing "Resolución de problemas")
+2. [Tutorial de Java](https://docs.oracle.com/javase/tutorial/ "Tutorial de Java")
