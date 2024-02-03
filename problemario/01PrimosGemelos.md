@@ -18,4 +18,8 @@ números primos gemelos más cercanos menores o iguales a **N**._
  |------------------------|-----------------------|
  |           44           |        41 43          |
 
-_Nota: El problema de los primos gemelos se estudia en la teoría de números. La redacción anterior fue tomada del juez en línea Beecrowd._
+#### _Notas:_
+
+_El problema de los primos gemelos se estudia en la teoría de números._
+
+_La redacción anterior fue tomada del juez en línea Beecrowd._
