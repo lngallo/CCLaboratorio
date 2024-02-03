@@ -1,4 +1,4 @@
-#### Fecha de actualización: 10.02.2023
+#### Fecha de actualización: 02.02.2024
 
 Nota: Para que no marquen error las instrucciones ejemplo tienen que estar dentro de la carpeta de su almacén. Las rutas usadas por los siguientes comandos suponen que la ruta relativa (la posición actual) es dentro de ../LeonardoGallo/.
 
