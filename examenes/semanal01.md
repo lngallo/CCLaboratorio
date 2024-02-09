@@ -21,4 +21,4 @@ int cuenta(int n) {
 5. ¿Quién es considerado el padre de Las Ciencias de la Computación y quién es considerado el padre del computador moderno?
 6. ¿Qué es el paso por valor y el paso por referencia? Ejemplifica.
 7. ¿Para qué sirve la palabra reservada _static_?
-8. ¿Cuáles son los pilares de la POO?
+8. ¿Cuáles son los pilares de la POO? Explica brevemente en qué consiste cada uno.
