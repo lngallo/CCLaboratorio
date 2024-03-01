@@ -23,4 +23,19 @@ public class MatrixBA<E> extends Matrix<E> {
 	return null;
     }
 
+    @Override
+    public String toString() {
+	return "";
+    }
+
+    /**
+     * Método principal.
+     */
+    public static void main(String[] args) {
+	int[][] intM = {{1,2},{2,3}};
+	Matrix m = new MatrixBA(intM);
+
+	System.out.println("Mostamos la matriz :\n" + m );
+    }
+
 }
