@@ -10,18 +10,18 @@ public abstract class Matrix<E> {
      * Comment...
      *
      */
-    public int getNColumns();
+    public abstract int getNColumns();
 
     /**
      * Comment...
      *
      */
-    public int getNRows();
+    public abstract int getNRows();
 
     /**
      * Comment...
      *
      */
-    public E getElement(int i, int j);
+    public abstract E getElement(int i, int j);
 
 }
