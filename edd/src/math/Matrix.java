@@ -4,7 +4,7 @@ package math;
  * Comment...
  *
  */
-public abstract class Matrix<T> {
+public abstract class Matrix<E> {
 
     /**
      * Comment...
@@ -22,6 +22,6 @@ public abstract class Matrix<T> {
      * Comment...
      *
      */
-    public T getElement(int i, int j);
+    public E getElement(int i, int j);
 
 }
