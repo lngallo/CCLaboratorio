@@ -6,7 +6,14 @@ package math;
  */
 public class MatrixBA<E> extends Matrix<E> {
 
-    // atributos
+    private E[][] biArray;
+
+    /**
+     *
+     */
+    public MatrixBA(E[][] biArray) {
+	this.biArray = biArray;
+    }
 
     @Override
     public int getNColumns() {
@@ -25,14 +32,16 @@ public class MatrixBA<E> extends Matrix<E> {
 
     @Override
     public String toString() {
-	return "";
+	String strMatrix = "";
+	
+	return "muestro matriz";
     }
 
     /**
      * Método principal.
      */
     public static void main(String[] args) {
-	int[][] intM = {{1,2},{2,3}};
+	Integer[][] intM = {{1,2},{2,3}};
 	Matrix m = new MatrixBA(intM);
 
 	System.out.println("Mostamos la matriz :\n" + m );
