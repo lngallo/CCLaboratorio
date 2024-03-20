@@ -11,6 +11,7 @@
 5. Completa la siguiente tabla hash y menciona cómo resolverías las coliciones, ¿Usarias alguna estructura extra? ¿Cuál y por qué?.
 
 | # | clave k | valor v | h(k) = k mod 3 |
+|---|---------|---------|----------------|
 | 1 | 12 | "abc" | _ |
 | 2 | 5 | "dino" | _ |
 | 3 | 9 | "ada" | _ |
