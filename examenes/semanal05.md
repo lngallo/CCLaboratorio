@@ -8,12 +8,12 @@
 
 4. ¿Cuál es la relación de almacenamiento en una tabla hash y para que se ocupa la función hash?
 
-5. Completa la siguiente tabla hash y menciona cómo resolverías las coliciones, ¿Usarias alguna estructura extra? ¿Cuál y por qué?.
+5. Completa la siguiente tabla hash y menciona cómo resolverías las coliciones, ¿Usarias alguna estructura extra? ¿Cuál y por qué?
 
 | # | clave k | valor v | h(k) = k mod 3 |
 |---|---------|---------|----------------|
-| 1 | 12 | "abc" | _ |
-| 2 | 5 | "dino" | _ |
-| 3 | 9 | "ada" | _ |
-| 4 | 7 | "dado" | _ |
-| 5 | 10 | "oso" | _ |
+| 1 | 12 | "abc" | |
+| 2 | 5 | "dino" | |
+| 3 | 9 | "ada" | |
+| 4 | 7 | "dado" | |
+| 5 | 10 | "oso" | |
