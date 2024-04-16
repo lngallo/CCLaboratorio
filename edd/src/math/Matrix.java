@@ -1,10 +1,11 @@
 package math;
 
+import interfaces.Operable;
 /**
  * Comment...
  *
  */
-public abstract class Matrix<E> {
+public abstract class Matrix<E> implements Operable<Matrix>{
 
     /**
      * Comment...
@@ -23,5 +24,4 @@ public abstract class Matrix<E> {
      *
      */
     public abstract E getElement(int i, int j);
-
 }

@@ -1,10 +1,12 @@
 package math;
 
+import interfaces.Operable;
+
 /**
  * Comment...
  *
  */
-public class MatrixBA<E> extends Matrix<E> {
+public class MatrixBA<E extends Operable> extends Matrix<E> {
 
     private E[][] biArray;
 
@@ -17,19 +19,26 @@ public class MatrixBA<E> extends Matrix<E> {
 
     @Override
     public int getNColumns() {
-	return 0;
+	return biArray[0].length;
     }
 
     @Override
     public int getNRows() {
-	return 0;
+	return biArray.length;
     }
 
     @Override
     public E getElement(int i, int j) {
-	return null;
+	return biArray[i-1][j-1];
     }
 
+    @Override
+    public Matrix add(Matrix m) {
+	//	Operable[][] matrix = new Operable[2][3];
+	
+	return null;
+    }
+    
     @Override
     public String toString() {
 	String strMatrix = "";
@@ -41,10 +50,7 @@ public class MatrixBA<E> extends Matrix<E> {
      * Método principal.
      */
     public static void main(String[] args) {
-	Integer[][] intM = {{1,2},{2,3}};
-	Matrix m = new MatrixBA(intM);
 
-	System.out.println("Mostamos la matriz :\n" + m );
     }
 
 }
