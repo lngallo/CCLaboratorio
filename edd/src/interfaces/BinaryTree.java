@@ -24,11 +24,11 @@ public interface BinaryTree<E> {
      * COMMENT...
      * @param
      */
-    boolean insert(E element);
+    void insert(E element);
 
     /**
      * COMMENT...
      * @param
      */
-    boolean delete(E element);
+    void delete(E element);
 }
