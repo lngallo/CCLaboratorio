@@ -9,13 +9,16 @@ import java.util.Scanner;
 public class UseMenu {
 
     /**
-     * Método para limpiar pantalla
+     * Método para limpiar pantalla.
      */
     public static void cleanScreen() {
 	System.out.print("\033[H\033[2J");
 	System.out.flush();
     }
 
+    /**
+     * Despliegue del menú de inicio.
+     */
     public static void muestraMenu() {
 	System.out.println(
 			   "Ingresa el número de una de las siguientes opciones:"
@@ -27,7 +30,17 @@ public class UseMenu {
     }
 
     /**
-     * Método principal
+     * Muestra un retraso en en millisegundos.
+     */
+    public static void applyDelay(int millis) {
+	try {
+	    Thread.sleep(millis);
+	} catch(InterruptedException e) {
+	}
+    }
+
+    /**
+     * Método principal, necesario para la JVM.
      */
     public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
@@ -60,20 +73,25 @@ public class UseMenu {
 		    flag = false;
 		    break;
 		default:
-		    System.out.println("Opción no valida, intenta de nuevo.");
+		    System.out.println("\nLa opción no es válida. Intenta de nuevo...");
+		    applyDelay(2000);
 		    flag = true;
 		    break;
 		}
 	    } while (flag);
 	case 2:
 	    break;
+	case 0: // salir
+	    break;
 	default:
-	    System.out.println("La opción no es válida.");	    
+	    System.out.println("\nLa opción no es válida. Intenta de nuevo...");
+	    applyDelay(2000);
 	}
 	
 	if (opcion == 0) {
-	    System.out.println("Vuelve pronto....");
+	    System.out.println("\n.... ¡Vuelve pronto! ....");
 	    // que se viusalice la pantalla 3 segundo.
+	    applyDelay(2000);
 	    flag = false;
 	} else {
 	    flag = true;
