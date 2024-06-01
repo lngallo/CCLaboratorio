@@ -8,6 +8,19 @@ import java.util.Scanner;
  */
 public class UseMenu {
 
+    /** Colores */
+    public static final String RESET = "\u001B[0m"; // Restablecer formato predeterminado
+    public static final String BLACK = "\u001B[30m";
+    public static final String RED = "\u001B[31m";
+    public static final String GREEN = "\u001B[32m";
+    public static final String YELLOW = "\u001B[33m";
+    public static final String BLUE = "\u001B[34m";
+    public static final String PURPLE = "\u001B[35m";
+    public static final String CYAN = "\u001B[36m";
+    public static final String WHITE = "\u001B[37m";
+    public static final String BB = "\033[1m"; // Inicio de negritas
+    public static final String EB = "\033[0m"; //Fin de negritas
+
     /**
      * Método para limpiar pantalla.
      */
@@ -20,13 +33,16 @@ public class UseMenu {
      * Despliegue del menú de inicio.
      */
     public static void muestraMenu() {
-	System.out.println(
-			   "Ingresa el número de una de las siguientes opciones:"
-			   + "\n1. Agregar"
-			   + "\n2. Actualizar"
-			   + "\n3. Eliminar"
-			   + "\n4. Buscar"
-			   + "\n0. Salir");
+	System.out.print(BLUE + BB
+			   + "Ingresa el número de una de las siguientes opciones:"
+			   + CYAN
+			   + "\n\t1. Agregar"
+			   + "\n\t2. Actualizar"
+			   + "\n\t3. Eliminar"
+			   + "\n\t4. Buscar"
+			   + "\n\t0. Salir"
+			   + BLUE
+			   + "\nOpción: ");
     }
 
     /**
@@ -49,18 +65,19 @@ public class UseMenu {
 	do {
 	cleanScreen();
 	muestraMenu();
-
-	System.out.print("Opción: ");
 	opcion = sc.nextInt();
 
 	switch (opcion) {
 	case 1:
 	    do {
 		cleanScreen();
-		System.out.println("Selecciones una de las siguientes opciones:"
-				   + "\n1. Ejecutar"
-				   + "\n2. Regresar al menú principal."
-				   + "\n0. Salir");
+		System.out.print("Selecciones una de las siguientes opciones:"
+				   + CYAN
+				   + "\n\t1. Ejecutar"
+				   + "\n\t2. Regresar al menú principal."
+				   + "\n\t0. Salir"
+				   + BLUE
+				   + "\nOpción: ");
 		opcion = sc.nextInt();
 		switch (opcion) {
 		case 1:
